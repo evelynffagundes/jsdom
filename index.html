@@ -38,5 +38,27 @@
     </div>
 </body>
 <script>
+    var itemA = window.document.getElementById('bt-a')
+    var itemB = window.document.getElementById('bt-b') 
+    var itemC = window.document.getElementById('bt-c')
+    var total = window.document.getElementById ('total')
+
+    function somaA(){
+        
+        total.innerText = parseInt(total.innerText) + 5;
+    }
+        function somaB(){
+            total.innerText = parseInt(total.innerText) + 10;
+        }
+        
+        function somaC(){
+            total.innerText = parseInt(total.innerText) + 20;
+        }
+    
+
+    itemA.addEventListener('click', somaA)
+    itemB.addEventListener('click', somaB)
+    itemC.addEventListener('click', somaC)
+
 </script>
 </html>
